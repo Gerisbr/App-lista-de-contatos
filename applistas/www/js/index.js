@@ -1,8 +1,9 @@
+function Enviar() {
 
-document.addEventListener('deviceready', onDeviceReady, false);
+    var nome = document.getElementById("nomeid");
 
-function onDeviceReady() {
-   
-    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-    document.getElementById('deviceready').classList.add('ready');
+    if (nome.value != "") {
+        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+    }
+
 }
